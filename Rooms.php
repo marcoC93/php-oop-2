@@ -6,9 +6,17 @@ class Rooms {
     public $beds;
     public $roomnumber;
 
-    function __construct($letti)
+    function __construct($numeroStanza)
     {
-        $this->beds = $letti;
+        $this->roomnumber = $numeroStanza;
+    }
+    public function getRoom() {
+        return $this->roomnumber;
+    }
+
+    public function setRoom($numeroStanza) {
+
+        $this->roomnumber = $numeroStanza;
     }
 }
 
