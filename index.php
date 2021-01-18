@@ -1,12 +1,12 @@
 <?php
 
+require_once 'Users.php';
 
-class Utenti {
-    public $name;
-    public $lastname;
-    public $age;
-    public $id;
-}
+$ospite = new Users(18);
 
-new 
+echo $ospite->age;
+$ospite->setName('pippo');
+echo $ospite->getName();
+$ospite->setName('paperino');
+echo $ospite->getName();
 ?>
