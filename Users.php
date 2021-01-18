@@ -16,10 +16,13 @@ class Users {
     }
 
     public function setName($nome) {
-        $nome .= '-test';
+        $nome .= '</br>';
         $this->name = $nome;
     }
 }
+
+
+
 
 
 ?>
